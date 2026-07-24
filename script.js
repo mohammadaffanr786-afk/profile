@@ -1,11 +1,13 @@
+
 // Mobile Menu
+
 const menu = document.querySelector(".menu");
-const navLinks = document.querySelector(".nav-links");
+const navLinks =
+ document.querySelector(".nav-links");
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e) {
