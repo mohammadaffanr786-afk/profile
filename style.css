@@ -115,10 +115,17 @@ body{
 }
 
 .btn2{
-    margin-left:10px;
+    margin-left:15px;
     border:2px solid #2563eb;
     background:transparent;
     color:white;
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:40px;
+    background:transparent;
+    text-decoration:none;
+    cursor:pointer;
+    
 }
 
 /* Image */
@@ -162,6 +169,7 @@ body{
 
 @media(max-width:768px){
 
+
 .menu{
     display:block;
 }
@@ -200,6 +208,22 @@ body{
     border-radius:10px;
     width:200px;
 }
+}
+@media(max-width:768px){
+
+.buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+.btn1,.btn2{
+    width:220px;
+    margin:0;
+    text-align:center;
+    display:inline-block;
+}
+}
 .footer{
     text-align:center;
     padding:40px 20px;
@@ -226,4 +250,3 @@ body{
     color:#aaa;
 }
 
-}
