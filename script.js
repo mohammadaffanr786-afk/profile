@@ -1,37 +1,25 @@
-
 // Mobile Menu
-
 const menu = document.querySelector(".menu");
-const navLinks =
- document.querySelector(".nav-links");
+const navLinks = document.querySelector(".nav-links");
 
 menu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute("href"));
+// Show Only One Section
+function showSection(id) {
 
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
+    const pages = document.querySelectorAll(".page");
 
-        navLinks.classList.remove("active");
+    pages.forEach(page => {
+        page.style.display = "none";
     });
-});
 
-// Navbar Background on Scroll
-window.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".navbar");
+    document.getElementById(id).style.display = "block";
 
-    if (window.scrollY > 50) {
-        navbar.classList.add("scroll");
-    } else {
-        navbar.classList.remove("scroll");
-    }
-});
+    // Close mobile menu after click
+    navLinks.classList.remove("active");
+}
+
+// Default Page
+showSection("home");

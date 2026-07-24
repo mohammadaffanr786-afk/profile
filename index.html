@@ -1,114 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Affan | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Affan Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
+<header>
 
-            <div class="logo">
-                Mohammad <span>Affan</span>
-            </div>
+<nav class="navbar">
 
-            <!-- Mobile Menu -->
-            <div class="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+<div class="logo">
+Mohammad <span>Affan</span>
+</div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<div class="menu">
+<i class="fas fa-bars"></i>
+</div>
 
-        </nav>
-    </header>
+<ul class="nav-links">
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+<li><a href="#" onclick="showSection('home')">Home</a></li>
 
-        <div class="content">
+<li><a href="#" onclick="showSection('about')">About</a></li>
 
-            <h3>👋 Hi, I'm</h3>
+<li><a href="#" onclick="showSection('skills')">Skills</a></li>
 
-            <h1 class="title">
-                Mohammad <span>Affan</span>
-            </h1>
+<li><a href="#" onclick="showSection('projects')">Projects</a></li>
 
-            <h2>BBA-CA Student | Web Developer</h2>
+<li><a href="#" onclick="showSection('contact')">Contact</a></li>
 
-            <p>
-                I build modern and responsive websites.
-                I enjoy learning new technologies and
-                creating real-world projects.
-            </p>
+</ul>
 
+</nav>
 
-            <div class="buttons">
-                <button class="btn1">🚀 View Projects</button>
-                <button class="btn2">📩 Contact Me</button>
-            </div>
+</header>
 
-            <div class="social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-            </div>
+<!-- HOME -->
 
-        </div>
+<section id="home" class="page">
 
-        <div class="image">
-            <img src="pro.jpg.png" alt="Mohammad Affan">
-        </div>
+<div class="hero">
 
-    </section>
+<div class="content">
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Mohammad Affan, a BBA-CA student with a passion for web development.</p>
-        <p>I enjoy building modern responsive websites using HTML, CSS, and JavaScript.I am constantly learning new technologies and improving my programming skills.</p>
-        <p>my goal is to become a skilled web developer.and create useful digital products.</p>
-    </section>
+<h3>👋 Hi, I'm</h3>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>c programming</li>
-            <li>Graphic Design</li>
-            <li>Responsive web Design</li>
-        </ul>
-    </section>
+<h1 class="title">
+Mohammad <span>Affan</span>
+</h1>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>shopping website A responsive design</p>
-    </section>
+<h2>BBA-CA Student | Web Developer</h2>
 
-    <!-- Contact -->
-    <section id="contact"></section>
+<p>
+I build modern and responsive websites.
+</p>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<div class="buttons">
+
+<button class="btn1">
+View Projects
+</button>
+
+<button class="btn2">
+Contact Me
+</button>
+
+</div>
+
+</div>
+
+<div class="image">
+
+<img src="pro.jpg.png">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="page">
+
+<h1>About Me</h1>
+
+<p>
+Hello! I'm Mohammad Affan.
+
+I'm a BBA-CA student and Web Developer.
+
+I love creating modern websites.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="page">
+
+<h1>My Skills</h1>
+
+<ul>
+
+<li>HTML</li>
+
+<li>CSS</li>
+
+<li>JavaScript</li>
+
+<li>C</li>
+
+<li>C#</li>
+
+<li>Unity</li>
+
+</ul>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="page">
+
+<h1>Projects</h1>
+
+<p>Shopping Website</p>
+
+<p>Portfolio Website</p>
+
+<p>Unity 2D Game</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="page">
+
+<h1>Contact</h1>
+
+<p>Email : your@gmail.com</p>
+
+<p>GitHub : github.com/yourname</p>
+
+<p>LinkedIn : linkedin.com/in/yourname</p>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
